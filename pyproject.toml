@@ -8,7 +8,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "animesisr_basicsr"
+name = "animesisr-basicsr"
 
 dynamic = ["version"]
 description = "Open Source Image and Video Super-Resolution Toolbox"
