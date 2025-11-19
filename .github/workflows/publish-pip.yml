@@ -3,7 +3,7 @@ name: PyPI Publish
 on: push
 
 jobs:
-  build-n-publish:
+  build-and-publish:
     runs-on: ubuntu-latest
     if: startsWith(github.event.ref, 'refs/tags')
 
