@@ -12,8 +12,11 @@ def test_pipeline(root_path):
     # parse options, set distributed setting, set ramdom seed
     opt, _ = parse_options(root_path, is_train=False)
 
-    torch.backends.cudnn.benchmark = True
-    # torch.backends.cudnn.deterministic = True
+    if opt.get('deterministic', False):
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+    else:
+        torch.backends.cudnn.benchmark = True
 
     # mkdir and initialize loggers
     make_exp_dirs(opt)

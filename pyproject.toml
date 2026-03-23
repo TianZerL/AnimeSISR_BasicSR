@@ -35,7 +35,7 @@ requires-python = ">=3.7"
 
 dependencies = [
   "addict", "future", "lmdb", "numpy", "opencv-python", "Pillow",
-  "pyyaml", "requests", "scikit-image", "scipy", "tb-nightly",
+  "pyyaml", "requests", "scikit-image", "scipy", "tensorboard",
   "torch", "torchvision", "tqdm", "yapf", "cython"
 ]
 
