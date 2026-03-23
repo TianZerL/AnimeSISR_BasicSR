@@ -40,8 +40,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/TianZerL/BasicSR"
-Repository = "https://github.com/TianZerL/BasicSR"
+Homepage = "https://github.com/TianZerL/AnimeSISR_BasicSR"
+Repository = "https://github.com/TianZerL/AnimeSISR_BasicSR"
 
 
 [tool.setuptools.packages.find]

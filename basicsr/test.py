@@ -15,6 +15,7 @@ def test_pipeline(root_path):
     if opt.get('deterministic', False):
         torch.backends.cudnn.deterministic = True
         torch.backends.cudnn.benchmark = False
+        torch.use_deterministic_algorithms(True)
     else:
         torch.backends.cudnn.benchmark = True
 
